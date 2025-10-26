@@ -2,7 +2,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
-def send_tg_message(message):
+def send_message(message):
     load_dotenv()
     bot_token = os.getenv("BOT_TOKEN")
     bot_chatID = os.getenv("BOT_CHAT_ID")
