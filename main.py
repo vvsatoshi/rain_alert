@@ -1,5 +1,5 @@
 import requests
-from tg_send_text import send_tg_message
+from messaging import send_message
 import os
 from dotenv import load_dotenv
 
@@ -27,5 +27,5 @@ for hour_data in weather_data["list"]:
         will_rain = True
 
 if will_rain:
-    send_tg_message("Bring an umbrella!")
+    send_message("Bring an umbrella!")
     print("bring an umbrella!")
